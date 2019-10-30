@@ -4,12 +4,31 @@
   <meta charset="utf-8">
   <title>MEAN Auth App</title>
   <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAJyP47lnCV6e0vN9pH26WA6QThR8MOeQQ",
+    authDomain: "img-squared.firebaseapp.com",
+    databaseURL: "https://img-squared.firebaseio.com",
+    projectId: "img-squared",
+    storageBucket: "img-squared.appspot.com",
+    messagingSenderId: "746083450389",
+    appId: "1:746083450389:web:88504ea422e1c748fcd81c",
+    measurementId: "G-WJZ4GLTEX8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <app-root>Loading....</app-root>
 </body>
 </html>
